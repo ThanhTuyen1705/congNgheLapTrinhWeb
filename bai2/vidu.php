@@ -36,17 +36,17 @@ $nghiem= "x= $x";
 <tr>
 <td width="120">Phương trình </td>
 <td width="250">
-<input name="a" type="text" />
+<input name="a" type="text" value="<?php if(isset($_POST["a"])){echo $_POST["a"];} ?>"/>
 X + </td>
 <td width="352"><label for="textfield"></label>
-<input name="b" type="text" id="textfield" />
+<input name="b" type="text" id="textfield" value="<?php if(isset($_POST["b"])){echo $_POST["b"];} ?>"/>
 = 0</td>
 </tr>
 <tr>
 <td colspan="3">
 Nghiệm 
 <label for="textfield2"></label>
-<input name="kq" type="text" id="textfield2" /></tr>
+<input name="kq" type="text" id="textfield2" value="<?php if(isset($nghiem)){echo $nghiem;} ?>"/></tr>
 <tr>
 <td colspan="3" align="center" valign="middle"><input type="submit" name="chao" id="chao" value="Xuất" /></td>
 </tr>
